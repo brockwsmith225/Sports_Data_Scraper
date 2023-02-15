@@ -38,6 +38,8 @@ def format_stat(stat: str) -> str:
         return "0"
     if stat.endswith("/"):
         stat = stat[:-1]
+    if stat.endswith("*"):
+        stat = stat[:-1]
     return stat
 
 
