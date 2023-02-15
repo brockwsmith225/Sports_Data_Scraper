@@ -1,0 +1,31 @@
+name: Update Game Data
+
+on:
+  push:
+    branches: [ "main" ]
+
+concurrency:
+  group: ${{ github.ref }}
+  cancel-in-progress: true
+
+permissions: write-all
+
+jobs:
+  cbb:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Fetch CBB data
+        run: |
+          pip install -r requirements.txt
+          python -m scraper cbb fetch --debug > games.csv
+
+      - name: Commit changes
+        uses: EndBug/add-and-commit@v9
+        with:
+          author_name: Brock Smith
+          author_email: brockwsmith@gatech.edu
+          message: 'Updated CBB data'
+

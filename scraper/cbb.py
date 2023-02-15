@@ -31,8 +31,8 @@ def get_team_urls(year: str) -> List[str]:
 
 def get_team_page(url: str) -> str:
     header = {'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/109.0'}
-    r = requests.get(url, headers=header)
-    return r.text
+    response = requests.get(url, headers=header)
+    return response.text
 
 
 def format_stat(stat: str) -> str:
@@ -40,6 +40,8 @@ def format_stat(stat: str) -> str:
     if len(stat) == 0:
         return "0"
     if stat.endswith("/"):
+        stat = stat[:-1]
+    if stat.endswith("*"):
         stat = stat[:-1]
     return stat
 
@@ -139,12 +141,9 @@ def parse_team_callback(thread_info: dict, team_page: str):
     thread_info['pool'].apply_async(parse_team_page, [team_page], callback=lambda team_games: add_games(thread_info, team_games))
 
 @app.command()
-def fetch(year: str = None, num_threads: int = None):
+def fetch(year: str = None, num_threads: int = 8, debug: bool=False):
     if not year:
         year = str(datetime.date.today().year)
-    if not num_threads:
-        num_threads = 8
-
     thread_info = generate_thread_info(num_threads)
 
     pool = thread_info['pool']
@@ -152,14 +151,18 @@ def fetch(year: str = None, num_threads: int = None):
 
     starttime = time.time()
     for team, team_url in get_team_urls(year):
-        print(f"Fetching {team} from {team_url}", file=sys.stderr)
+        if debug:
+            print(f"Fetching {team} from {team_url}", file=sys.stderr)
         pool.apply_async(get_team_page, [team_url], callback=lambda team_page : parse_team_callback(thread_info, team_page))
+
+
 
     with cv:
         cv.wait_for(lambda: thread_info['count'] >= thread_info['num_teams'])
     pool.close()
     pool.join()
-    print(f"Total elapsed time: {time.time() - starttime}", file=sys.stderr)
+    if debug:
+        print(f"Total elapsed time: {time.time() - starttime}", file=sys.stderr)
 
     output_csv(thread_info['games'])
 
