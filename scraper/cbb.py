@@ -28,8 +28,8 @@ def get_team_urls(year: str) -> List[str]:
 
 def get_team_page(url: str) -> str:
     header = {'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/109.0'}
-    r = requests.get(url, headers=header)
-    return r.text
+    response = requests.get(url, headers=header)
+    return response.text
 
 
 def format_stat(stat: str) -> str:
@@ -117,17 +117,20 @@ def output_csv(games: List[Dict]):
 
 
 @app.command()
-def fetch(year: str = None):
+def fetch(year: str = None, debug: bool = False):
     if not year:
         year = str(datetime.date.today().year)
 
     starttime = time.time()
     games = []
     for team, team_url in get_team_urls(year):
-        print(f"Fetching {team} from {team_url}", file=sys.stderr)
+        if debug:
+            print(f"Fetching {team} from {team_url}", file=sys.stderr)
         team_page = get_team_page(team_url)
         games.extend(parse_team_page(team_page))
-    print(f"Total elapsed time: {time.time() - starttime}", file=sys.stderr)
+
+    if debug:
+        print(f"Total elapsed time: {time.time() - starttime}", file=sys.stderr)
 
     output_csv(games)
 
