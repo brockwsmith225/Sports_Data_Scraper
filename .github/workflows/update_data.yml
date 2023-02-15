@@ -15,6 +15,7 @@ jobs:
 
       - name: Fetch CBB data
         run: |
+          pip install -r requirements.txt
           python -m scraper cbb fetch > games.csv
 
       - name: Commit changes
