@@ -84,6 +84,8 @@ def parse_team_page(page: str) -> List[Dict]:
                 points = int(stats[2].split("-")[0])
                 opp_points = int(stats[2].split("-")[1].split(" ")[0])
                 overtimes = stats[2].split(" ")[1][1:-1] if len(stats[2].split(" ")) > 1 else "0"
+                if team is None or team == "":
+                    print("Failed to get team name for one team")
                 games.append({
                     "date": stats[0],
                     "team": team,
