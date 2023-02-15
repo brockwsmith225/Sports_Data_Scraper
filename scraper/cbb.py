@@ -1,5 +1,6 @@
 import csv
 import datetime
+import multiprocessing
 import re
 import requests
 import sys
@@ -7,6 +8,8 @@ import time
 import typer
 from bs4 import BeautifulSoup
 from typing import Dict, List
+from multiprocessing import Pool
+import time
 
 app = typer.Typer()
 
@@ -116,20 +119,49 @@ def output_csv(games: List[Dict]):
     writer.writerows(games_values)
 
 
+def generate_thread_info(num_threads : int) -> dict:
+    return {
+        'num_teams': 363,
+        'cv': multiprocessing.Condition(),
+        'pool': Pool(processes=num_threads),
+        'games': [],
+        'count': 0
+    }
+
+def add_games(thread_info: dict, team_games: List[Dict]):    
+    thread_info['games'].extend(team_games)
+    with thread_info['cv']:
+        thread_info['count'] += 1
+        thread_info['cv'].notify_all()
+
+
+def parse_team_callback(thread_info: dict, team_page: str):
+    thread_info['pool'].apply_async(parse_team_page, [team_page], callback=lambda team_games: add_games(thread_info, team_games))
+
 @app.command()
-def fetch(year: str = None):
+def fetch(year: str = None, num_threads: int = None):
     if not year:
         year = str(datetime.date.today().year)
+    if not num_threads:
+        num_threads = 8
+
+    thread_info = generate_thread_info(num_threads)
+
+    pool = thread_info['pool']
+    cv = thread_info['cv']
 
     starttime = time.time()
-    games = []
     for team, team_url in get_team_urls(year):
         print(f"Fetching {team} from {team_url}", file=sys.stderr)
-        team_page = get_team_page(team_url)
-        games.extend(parse_team_page(team_page))
+        pool.apply_async(get_team_page, [team_url], callback=lambda team_page : parse_team_callback(thread_info, team_page))
+
+    with cv:
+        cv.wait_for(lambda: thread_info['count'] >= thread_info['num_teams'])
+    pool.close()
+    pool.join()
     print(f"Total elapsed time: {time.time() - starttime}", file=sys.stderr)
 
-    output_csv(games)
+    output_csv(thread_info['games'])
 
 if __name__ == "__main__":
     app()

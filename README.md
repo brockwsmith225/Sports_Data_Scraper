@@ -2,5 +2,5 @@
 
 To fetch college basketball data, run
 ```bash
-python -m scraper cbb fetch [--year YEAR]
+python -m scraper cbb fetch [--year YEAR] [--num-threads NUM_THREADS]
 ```
