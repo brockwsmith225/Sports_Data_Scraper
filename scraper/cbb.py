@@ -1,7 +1,9 @@
 import csv
 import datetime
 import re
+import requests
 import sys
+import time
 import typer
 from bs4 import BeautifulSoup
 from typing import Dict, List
@@ -9,13 +11,25 @@ from typing import Dict, List
 app = typer.Typer()
 
 
-def get_team_urls(year: int) -> List[str]:
-    return ["tests/louisville.html"]
+def get_team_urls(year: str) -> List[str]:
+    years_to_id = {
+        "2023": "16060",
+    }
+    team_urls = []
+    teams = []
+    with open("teams.csv") as f:
+        reader = csv.DictReader(f)
+        for team in reader:
+            teams.append(team)
+    for team in teams:
+        team_urls.append((team["name"], f"https://stats.ncaa.org/player/game_by_game?game_sport_year_ctl_id={years_to_id[year]}&org_id={team['id']}&stats_player_seq=-100"))
+    return team_urls
 
 
 def get_team_page(url: str) -> str:
-    with open(url, "r") as f:
-        return str(f.read())
+    header = {'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/109.0'}
+    r = requests.get(url, headers=header)
+    return r.text
 
 
 def format_stat(stat: str) -> str:
@@ -62,14 +76,18 @@ def parse_team_page(page: str) -> List[Dict]:
                 elif "@" in opponent:
                     opponent = opponent.split(" @ ")[0]
                     location = "neutral"
+                points = int(stats[2].split("-")[0])
+                opp_points = int(stats[2].split("-")[1].split(" ")[0])
+                overtimes = stats[2].split(" ")[1][1:-1] if len(stats[2].split(" ")) > 1 else "0"
                 games.append({
                     "date": stats[0],
                     "team": team,
                     "opponent": opponent,
                     "location": location,
-                    "result": "W" if int(stats[2].split("-")[0]) > int(stats[2].split("-")[1]) else "L",
-                    "points": stats[2].split("-")[0],
-                    "opp_points": stats[2].split("-")[1],
+                    "result": "W" if points > opp_points else "L",
+                    "overtimes": overtimes,
+                    "points": str(points),
+                    "opp_points": str(opp_points),
                     "field_goals_made": stats[5],
                     "field_goals_attempted": stats[6],
                     "3_point_field_goals_made": stats[7],
@@ -99,14 +117,17 @@ def output_csv(games: List[Dict]):
 
 
 @app.command()
-def fetch(year: int = None):
+def fetch(year: str = None):
     if not year:
-        year = datetime.date.today().year
+        year = str(datetime.date.today().year)
 
+    starttime = time.time()
     games = []
-    for team_url in get_team_urls(year):
+    for team, team_url in get_team_urls(year):
+        print(f"Fetching {team} from {team_url}", file=sys.stderr)
         team_page = get_team_page(team_url)
         games.extend(parse_team_page(team_page))
+    print(f"Total elapsed time: {time.time() - starttime}", file=sys.stderr)
 
     output_csv(games)
 
