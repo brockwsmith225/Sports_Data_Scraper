@@ -1,364 +1,364 @@
-name, id, conference, is_fbs
-Abilene Christian University, 2, Western Athletic Conference, False
-Alabama A&M University, 6, Southwestern Athletic Conf., False
-Alabama State University, 7, Southwestern Athletic Conf., False
-Alcorn State University, 17, Southwestern Athletic Conf., False
-American University, 23, Patriot League, False
-Appalachian State University, 27, Sun Belt Conference, True
-Arizona State University, 28, Pac-12 Conference, True
-Arkansas State University, 30, Sun Belt Conference, True
-Auburn University, 37, Southeastern Conference, True
-Austin Peay State University, 43, ASUN Conference, False
-Ball State University, 47, Mid-American Conference, True
-Baylor University, 51, Big 12 Conference, True
-Bellarmine University, 52, ASUN Conference, False
-Belmont University, 14927, Missouri Valley Conference, False
-Bethune-Cookman University, 61, Southwestern Athletic Conf., False
-Binghamton University, 62, America East Conference, False
-Boise State University, 66, Mountain West Conference, True
-Boston College, 67, Atlantic Coast Conference, True
-Boston University, 68, Patriot League, False
-Bowling Green State University, 71, Mid-American Conference, True
-Bradley University, 72, Missouri Valley Conference, False
-Brigham Young University, 77, West Coast Conference, True
-Brown University, 80, The Ivy League, False
-Bryant University, 81, America East Conference, False
-Bucknell University, 83, Patriot League, False
-Butler University, 87, Big East Conference, False
-California Baptist University, 30135, Western Athletic Conference, False
-California Polytechnic State University, 90, Big West Conference, False
-California State University, Bakersfield, 94, Big West Conference, False
-California State University, Fresno, 96, Mountain West Conference, True
-California State University, Fullerton, 97, Big West Conference, False
-California State University, Northridge, 101, Big West Conference, False
-California State University, Sacramento, 102, Big Sky Conference, False
-Campbell University, 115, Big South Conference, False
-Canisius College, 116, Metro Atlantic Athletic Conference, False
-Central Connecticut State University, 127, Northeast Conference, False
-Central Michigan University, 129, Mid-American Conference, True
-Charleston Southern University, 48, Big South Conference, False
-Chicago State University, 136, None, False
-Clemson University, 147, Atlantic Coast Conference, True
-Cleveland State University, 148, Horizon League, False
-Coastal Carolina University, 149, Sun Belt Conference, True
-Colgate University, 153, Patriot League, False
-College of Charleston (South Carolina), 1014, Colonial Athletic Association, False
-College of the Holy Cross, 285, Patriot League, False
-Colorado State University, 156, Mountain West Conference, True
-Columbia University-Barnard College, 158, The Ivy League, False
-Coppin State University, 165, Mid-Eastern Athletic Conf., False
-Cornell University, 167, The Ivy League, False
-Creighton University, 169, Big East Conference, False
-Dartmouth College, 172, The Ivy League, False
-Davidson College, 173, Atlantic 10 Conference, False
-Delaware State University, 178, Mid-Eastern Athletic Conf., False
-DePaul University, 176, Big East Conference, False
-Drake University, 189, Missouri Valley Conference, False
-Drexel University, 191, Colonial Athletic Association, False
-Duke University, 193, Atlantic Coast Conference, True
-Duquesne University, 194, Atlantic 10 Conference, False
-East Carolina University, 196, American Athletic Conference, True
-East Tennessee State University, 198, Southern Conference, False
-Eastern Illinois University, 201, Ohio Valley Conference, False
-Eastern Kentucky University, 202, ASUN Conference, False
-Eastern Michigan University, 204, Mid-American Conference, True
-Eastern Washington University, 207, Big Sky Conference, False
-Elon University, 1068, Colonial Athletic Association, False
-Fairfield University, 220, Metro Atlantic Athletic Conference, False
-Fairleigh Dickinson University, Metropolitan Campus, 222, Northeast Conference, False
-Florida A&M University, 228, Southwestern Athletic Conf., False
-Florida Atlantic University, 229, Conference USA, True
-Florida Gulf Coast University, 28755, ASUN Conference, False
-Florida International University, 231, Conference USA, True
-Florida State University, 234, Atlantic Coast Conference, True
-Fordham University, 236, Atlantic 10 Conference, False
-Furman University, 244, Southern Conference, False
-Gardner-Webb University, 1092, Big South Conference, False
-George Mason University, 248, Atlantic 10 Conference, False
-George Washington University, 249, Atlantic 10 Conference, False
-Georgetown University, 251, Big East Conference, False
-Georgia Institute of Technology, 255, Atlantic Coast Conference, True
-Georgia Southern University, 253, Sun Belt Conference, True
-Georgia State University, 254, Sun Belt Conference, True
-Gonzaga University, 260, West Coast Conference, False
-Grambling State University, 261, Southwestern Athletic Conf., False
-Grand Canyon University, 1104, Western Athletic Conference, False
-Hampton University, 270, Colonial Athletic Association, False
-Harvard University, 275, The Ivy League, False
-High Point University, 19651, Big South Conference, False
-Hofstra University, 283, Colonial Athletic Association, False
-Houston Christian University, 287, Southland Conference, False
-Howard University, 290, Mid-Eastern Athletic Conf., False
-Idaho State University, 294, Big Sky Conference, False
-Illinois State University, 299, Missouri Valley Conference, False
-Indiana State University, 305, Missouri Valley Conference, False
-Indiana University, Bloomington, 306, Big Ten Conference, True
-Indiana University-Purdue University Indianapolis, 2699, Horizon League, False
-Iona University, 310, Metro Atlantic Athletic Conference, False
-Iowa State University, 311, Big 12 Conference, True
-Jackson State University, 314, Southwestern Athletic Conf., False
-Jacksonville State University, 315, ASUN Conference, False
-Jacksonville University, 316, ASUN Conference, False
-James Madison University, 317, Sun Belt Conference, False
-Kansas State University, 327, Big 12 Conference, True
-Kennesaw State University, 1157, ASUN Conference, False
-Kent State University, 331, Mid-American Conference, True
-La Salle University, 340, Atlantic 10 Conference, False
-Lafayette College, 342, Patriot League, False
-Lamar University, 346, Southland Conference, False
-Lehigh University, 352, Patriot League, False
-Liberty University, 355, ASUN Conference, True
-Lindenwood University, 30136, Ohio Valley Conference, False
-Lipscomb University, 28600, ASUN Conference, False
-Long Beach State University, 99, Big West Conference, False
-Long Island University, 361, Northeast Conference, False
-Longwood University, 363, Big South Conference, False
-Louisiana State University, 365, Southeastern Conference, True
-Louisiana Tech University, 366, Conference USA, True
-Loyola Marymount University, 370, West Coast Conference, False
-Loyola University Chicago, 371, Atlantic 10 Conference, False
-Loyola University Maryland, 369, Patriot League, False
-Manhattan College, 381, Metro Atlantic Athletic Conference, False
-Marist College, 386, Metro Atlantic Athletic Conference, False
-Marquette University, 387, Big East Conference, False
-Marshall University, 388, Sun Belt Conference, True
-McNeese State University, 402, Southland Conference, False
-Mercer University, 406, Southern Conference, False
-Merrimack College, 410, Northeast Conference, False
-Miami University (Ohio), 414, Mid-American Conference, True
-Michigan State University, 416, Big Ten Conference, True
-Middle Tennessee State University, 419, Conference USA, True
-Mississippi State University, 430, Southeastern Conference, True
-Mississippi Valley State University, 432, Southwestern Athletic Conf., False
-Missouri State University, 669, Missouri Valley Conference, False
-Monmouth University, 439, Colonial Athletic Association, False
-Montana State University-Bozeman, 440, Big Sky Conference, False
-Morehead State University, 444, Ohio Valley Conference, False
-Morgan State University, 446, Mid-Eastern Athletic Conf., False
-Mount St. Mary's University, 450, Metro Atlantic Athletic Conference, False
-Murray State University, 454, Missouri Valley Conference, False
-New Jersey Institute of Technology, 471, America East Conference, False
-New Mexico State University, 472, Western Athletic Conference, True
-Niagara University, 482, Metro Atlantic Athletic Conference, False
-Nicholls State University, 483, Southland Conference, False
-Norfolk State University, 485, Mid-Eastern Athletic Conf., False
-North Carolina A&T State University, 488, Colonial Athletic Association, False
-North Carolina Central University, 489, Mid-Eastern Athletic Conf., False
-North Carolina State University, 490, Atlantic Coast Conference, True
-North Dakota State University, 493, The Summit League, False
-Northeastern University, 500, Colonial Athletic Association, False
-Northern Arizona University, 501, Big Sky Conference, False
-Northern Illinois University, 503, Mid-American Conference, True
-Northern Kentucky University, 505, Horizon League, False
-Northwestern State University, 508, Southland Conference, False
-Northwestern University, 509, Big Ten Conference, True
-Oakland University, 514, Horizon League, False
-Ohio University, 519, Mid-American Conference, True
-Oklahoma State University, 521, Big 12 Conference, True
-Old Dominion University, 523, Sun Belt Conference, True
-Oral Roberts University, 527, The Summit League, False
-Oregon State University, 528, Pac-12 Conference, True
-Pennsylvania State University, 539, Big Ten Conference, True
-Pepperdine University, 541, West Coast Conference, False
-Portland State University, 550, Big Sky Conference, False
-Prairie View A&M University, 553, Southwestern Athletic Conf., False
-Presbyterian College, 1320, Big South Conference, False
-Princeton University, 554, The Ivy League, False
-Providence College, 556, Big East Conference, False
-Purdue University, 559, Big Ten Conference, True
-Purdue University Fort Wayne, 308, Horizon League, False
-Queens University of Charlotte, 11504, ASUN Conference, False
-Quinnipiac University, 562, Metro Atlantic Athletic Conference, False
-Radford University, 563, Big South Conference, False
-Rice University, 574, Conference USA, True
-Rider University, 576, Metro Atlantic Athletic Conference, False
-Robert Morris University, 579, Horizon League, False
-Rutgers, The State University of New Jersey, New Brunswick, 587, Big Ten Conference, True
-Sacred Heart University, 590, Northeast Conference, False
-Saint Francis University (Pennsylvania), 600, Northeast Conference, False
-Saint Joseph's University, 606, Atlantic 10 Conference, False
-Saint Louis University, 609, Atlantic 10 Conference, False
-Saint Mary's College of California, 610, West Coast Conference, False
-Saint Peter's University, 617, Metro Atlantic Athletic Conference, False
-Sam Houston State University, 624, Western Athletic Conference, False
-Samford University, 625, Southern Conference, False
-San Diego State University, 626, Mountain West Conference, True
-San Jose State University, 630, Mountain West Conference, True
-Santa Clara University, 631, West Coast Conference, False
-Seattle University, 1356, Western Athletic Conference, False
-Seton Hall University, 635, Big East Conference, False
-Siena College, 639, Metro Atlantic Athletic Conference, False
-South Carolina State University, 647, Mid-Eastern Athletic Conf., False
-South Dakota State University, 649, The Summit League, False
-Southeast Missouri State University, 654, Ohio Valley Conference, False
-Southeastern Louisiana University, 655, Southland Conference, False
-Southern Illinois University at Carbondale, 659, Missouri Valley Conference, False
-Southern Illinois University Edwardsville, 660, Ohio Valley Conference, False
-Southern Methodist University, 663, American Athletic Conference, True
-Southern University, Baton Rouge, 665, Southwestern Athletic Conf., False
-Southern Utah University, 667, Western Athletic Conference, False
-St. Bonaventure University, 596, Atlantic 10 Conference, False
-St. Francis College Brooklyn, 599, Northeast Conference, False
-St. John's University (New York), 603, Big East Conference, False
-Stanford University, 674, Pac-12 Conference, True
-Stephen F. Austin State University, 676, Western Athletic Conference, False
-Stetson University, 678, ASUN Conference, False
-Stonehill College, 682, Northeast Conference, False
-Stony Brook University, 683, Colonial Athletic Association, False
-Syracuse University, 688, Atlantic Coast Conference, True
-Tarleton State University, 1395, Western Athletic Conference, False
-Temple University, 690, American Athletic Conference, True
-Tennessee State University, 691, Ohio Valley Conference, False
-Tennessee Technological University, 692, Ohio Valley Conference, False
-Texas A&M University, College Station, 697, Southeastern Conference, True
-Texas A&M University-Commerce, 199, Southland Conference, False
-Texas A&M University-Corpus Christi, 26172, Southland Conference, False
-Texas Christian University, 698, Big 12 Conference, True
-Texas Southern University, 699, Southwestern Athletic Conf., False
-Texas State University, 670, Sun Belt Conference, True
-Texas Tech University, 700, Big 12 Conference, True
-The Citadel, 141, Southern Conference, False
-The Ohio State University, 518, Big Ten Conference, True
-The University of North Carolina at Charlotte, 458, Conference USA, True
-The University of North Carolina at Greensboro, 459, Southern Conference, False
-The University of Southern Mississippi, 664, Sun Belt Conference, True
-The University of Texas Rio Grande Valley, 536, Western Athletic Conference, False
-The University of Tulsa, 719, American Athletic Conference, True
-Towson University, 711, Colonial Athletic Association, False
-Troy University, 716, Sun Belt Conference, True
-Tulane University, 718, American Athletic Conference, True
-U.S. Air Force Academy, 721, Mountain West Conference, True
-U.S. Military Academy, 725, Patriot League, True
-U.S. Naval Academy, 726, Patriot League, True
-University at Albany, 14, America East Conference, False
-University at Buffalo, the State University of New York, 86, Mid-American Conference, True
-University of Akron, 5, Mid-American Conference, True
-University of Alabama, 8, Southeastern Conference, True
-University of Alabama at Birmingham, 9, Conference USA, True
-University of Arizona, 29, Pac-12 Conference, True
-University of Arkansas at Little Rock, 32, Ohio Valley Conference, False
-University of Arkansas, Fayetteville, 31, Southeastern Conference, True
-University of Arkansas, Pine Bluff, 2678, Southwestern Athletic Conf., False
-University of California, Berkeley, 107, Pac-12 Conference, True
-University of California, Davis, 108, Big West Conference, False
-University of California, Irvine, 109, Big West Conference, False
-University of California, Los Angeles, 110, Pac-12 Conference, True
-University of California, Riverside, 111, Big West Conference, False
-University of California, San Diego, 112, Big West Conference, False
-University of California, Santa Barbara, 104, Big West Conference, False
-University of Central Arkansas, 1004, ASUN Conference, False
-University of Central Florida, 128, American Athletic Conference, True
-University of Cincinnati, 140, American Athletic Conference, True
-University of Colorado, Boulder, 157, Pac-12 Conference, True
-University of Connecticut, 164, Big East Conference, True
-University of Dayton, 175, Atlantic 10 Conference, False
-University of Delaware, 180, Colonial Athletic Association, False
-University of Denver, 183, The Summit League, False
-University of Detroit Mercy, 184, Horizon League, False
-University of Evansville, 219, Missouri Valley Conference, False
-University of Florida, 235, Southeastern Conference, True
-University of Georgia, 257, Southeastern Conference, True
-University of Hartford, 272, America East Conference, False
-University of Hawaii, Manoa, 277, Big West Conference, True
-University of Houston, 288, American Athletic Conference, True
-University of Idaho, 295, Big Sky Conference, False
-University of Illinois Chicago, 302, Missouri Valley Conference, False
-University of Illinois Urbana-Champaign, 301, Big Ten Conference, True
-University of Iowa, 312, Big Ten Conference, True
-University of Kansas, 328, Big 12 Conference, True
-University of Kentucky, 334, Southeastern Conference, True
-University of Louisiana at Lafayette, 671, Sun Belt Conference, True
-University of Louisiana Monroe, 498, Sun Belt Conference, True
-University of Louisville, 367, Atlantic Coast Conference, True
-University of Maine, 380, America East Conference, False
-University of Maryland Eastern Shore, 393, Mid-Eastern Athletic Conf., False
-University of Maryland, Baltimore County, 391, America East Conference, False
-University of Maryland, College Park, 392, Big Ten Conference, True
-University of Massachusetts Lowell, 368, America East Conference, False
-University of Massachusetts, Amherst, 400, Atlantic 10 Conference, True
-University of Memphis, 404, American Athletic Conference, True
-University of Miami (Florida), 415, Atlantic Coast Conference, True
-University of Michigan, 418, Big Ten Conference, True
-University of Minnesota, Twin Cities, 428, Big Ten Conference, True
-University of Mississippi, 433, Southeastern Conference, True
-University of Missouri, Columbia, 434, Southeastern Conference, True
-University of Missouri-Kansas City, 2707, The Summit League, False
-University of Montana, 441, Big Sky Conference, False
-University of Nebraska Omaha, 464, The Summit League, False
-University of Nebraska, Lincoln, 463, Big Ten Conference, True
-University of Nevada, Las Vegas, 465, Mountain West Conference, True
-University of Nevada, Reno, 466, Mountain West Conference, True
-University of New Hampshire, 469, America East Conference, False
-University of New Mexico, 473, Mountain West Conference, True
-University of New Orleans, 474, Southland Conference, False
-University of North Alabama, 487, ASUN Conference, False
-University of North Carolina Asheville, 456, Big South Conference, False
-University of North Carolina Wilmington, 460, Colonial Athletic Association, False
-University of North Carolina, Chapel Hill, 457, Atlantic Coast Conference, True
-University of North Dakota, 494, The Summit League, False
-University of North Florida, 2711, ASUN Conference, False
-University of North Texas, 497, Conference USA, True
-University of Northern Colorado, 502, Big Sky Conference, False
-University of Northern Iowa, 504, Missouri Valley Conference, False
-University of Notre Dame, 513, Atlantic Coast Conference, True
-University of Oklahoma, 522, Big 12 Conference, True
-University of Oregon, 529, Pac-12 Conference, True
-University of Pennsylvania, 540, The Ivy League, False
-University of Pittsburgh, 545, Atlantic Coast Conference, True
-University of Portland, 551, West Coast Conference, False
-University of Rhode Island, 572, Atlantic 10 Conference, False
-University of Richmond, 575, Atlantic 10 Conference, False
-University of San Diego, 627, West Coast Conference, False
-University of San Francisco, 629, West Coast Conference, False
-University of South Alabama, 646, Sun Belt Conference, True
-University of South Carolina Upstate, 10411, Big South Conference, False
-University of South Carolina, Columbia, 648, Southeastern Conference, True
-University of South Dakota, 650, The Summit League, False
-University of South Florida, 651, American Athletic Conference, True
-University of Southern California, 657, Pac-12 Conference, True
-University of Southern Indiana, 661, Ohio Valley Conference, False
-University of St. Thomas (Minnesota), 620, The Summit League, False
-University of Tennessee at Chattanooga, 693, Southern Conference, False
-University of Tennessee at Martin, 695, Ohio Valley Conference, False
-University of Tennessee, Knoxville, 694, Southeastern Conference, True
-University of Texas at Arlington, 702, Western Athletic Conference, False
-University of Texas at Austin, 703, Big 12 Conference, True
-University of Texas at El Paso, 704, Conference USA, True
-University of Texas at San Antonio, 706, Conference USA, True
-University of the Incarnate Word, 2743, Southland Conference, False
-University of the Pacific, 534, West Coast Conference, False
-University of Toledo, 709, Mid-American Conference, True
-University of Utah, 732, Pac-12 Conference, True
-University of Vermont, 738, America East Conference, False
-University of Virginia, 746, Atlantic Coast Conference, True
-University of Washington, 756, Pac-12 Conference, True
-University of Wisconsin-Green Bay, 794, Horizon League, False
-University of Wisconsin-Madison, 796, Big Ten Conference, True
-University of Wisconsin-Milwaukee, 797, Horizon League, False
-University of Wyoming, 811, Mountain West Conference, True
-Utah State University, 731, Mountain West Conference, True
-Utah Tech University, 30095, Western Athletic Conference, False
-Utah Valley University, 30024, Western Athletic Conference, False
-Valparaiso University, 735, Missouri Valley Conference, False
-Vanderbilt University, 736, Southeastern Conference, True
-Villanova University, 739, Big East Conference, False
-Virginia Commonwealth University, 740, Atlantic 10 Conference, False
-Virginia Military Institute, 741, Southern Conference, False
-Virginia Polytechnic Institute and State University, 742, Atlantic Coast Conference, True
-Wagner College, 748, Northeast Conference, False
-Wake Forest University, 749, Atlantic Coast Conference, True
-Washington State University, 754, Pac-12 Conference, True
-Weber State University, 758, Big Sky Conference, False
-West Virginia University, 768, Big 12 Conference, True
-Western Carolina University, 769, Southern Conference, False
-Western Illinois University, 771, The Summit League, False
-Western Kentucky University, 772, Conference USA, True
-Western Michigan University, 774, Mid-American Conference, True
-Wichita State University, 782, American Athletic Conference, False
-William & Mary, 786, Colonial Athletic Association, False
-Winthrop University, 792, Big South Conference, False
-Wofford College, 2915, Southern Conference, False
-Wright State University, 810, Horizon League, False
-Xavier University, 812, Big East Conference, False
-Yale University, 813, The Ivy League, False
-Youngstown State University, 817, Horizon League, False
+name,id,conference,is_fbs
+Abilene Christian University,2,Western Athletic Conference,False
+Alabama A&M University,6,Southwestern Athletic Conf.,False
+Alabama State University,7,Southwestern Athletic Conf.,False
+Alcorn State University,17,Southwestern Athletic Conf.,False
+American University,23,Patriot League,False
+Appalachian State University,27,Sun Belt Conference,True
+Arizona State University,28,Pac-12 Conference,True
+Arkansas State University,30,Sun Belt Conference,True
+Auburn University,37,Southeastern Conference,True
+Austin Peay State University,43,ASUN Conference,False
+Ball State University,47,Mid-American Conference,True
+Baylor University,51,Big 12 Conference,True
+Bellarmine University,52,ASUN Conference,False
+Belmont University,14927,Missouri Valley Conference,False
+Bethune-Cookman University,61,Southwestern Athletic Conf.,False
+Binghamton University,62,America East Conference,False
+Boise State University,66,Mountain West Conference,True
+Boston College,67,Atlantic Coast Conference,True
+Boston University,68,Patriot League,False
+Bowling Green State University,71,Mid-American Conference,True
+Bradley University,72,Missouri Valley Conference,False
+Brigham Young University,77,West Coast Conference,True
+Brown University,80,The Ivy League,False
+Bryant University,81,America East Conference,False
+Bucknell University,83,Patriot League,False
+Butler University,87,Big East Conference,False
+California Baptist University,30135,Western Athletic Conference,False
+California Polytechnic State University,90,Big West Conference,False
+"California State University, Bakersfield",94,Big West Conference,False
+"California State University, Fresno",96,Mountain West Conference,True
+"California State University, Fullerton",97,Big West Conference,False
+"California State University, Northridge",101,Big West Conference,False
+"California State University, Sacramento",102,Big Sky Conference,False
+Campbell University,115,Big South Conference,False
+Canisius College,116,Metro Atlantic Athletic Conference,False
+Central Connecticut State University,127,Northeast Conference,False
+Central Michigan University,129,Mid-American Conference,True
+Charleston Southern University,48,Big South Conference,False
+Chicago State University,136,,False
+Clemson University,147,Atlantic Coast Conference,True
+Cleveland State University,148,Horizon League,False
+Coastal Carolina University,149,Sun Belt Conference,True
+Colgate University,153,Patriot League,False
+College of Charleston (South Carolina),1014,Colonial Athletic Association,False
+College of the Holy Cross,285,Patriot League,False
+Colorado State University,156,Mountain West Conference,True
+Columbia University-Barnard College,158,The Ivy League,False
+Coppin State University,165,Mid-Eastern Athletic Conf.,False
+Cornell University,167,The Ivy League,False
+Creighton University,169,Big East Conference,False
+Dartmouth College,172,The Ivy League,False
+Davidson College,173,Atlantic 10 Conference,False
+Delaware State University,178,Mid-Eastern Athletic Conf.,False
+DePaul University,176,Big East Conference,False
+Drake University,189,Missouri Valley Conference,False
+Drexel University,191,Colonial Athletic Association,False
+Duke University,193,Atlantic Coast Conference,True
+Duquesne University,194,Atlantic 10 Conference,False
+East Carolina University,196,American Athletic Conference,True
+East Tennessee State University,198,Southern Conference,False
+Eastern Illinois University,201,Ohio Valley Conference,False
+Eastern Kentucky University,202,ASUN Conference,False
+Eastern Michigan University,204,Mid-American Conference,True
+Eastern Washington University,207,Big Sky Conference,False
+Elon University,1068,Colonial Athletic Association,False
+Fairfield University,220,Metro Atlantic Athletic Conference,False
+"Fairleigh Dickinson University, Metropolitan Campus",222,Northeast Conference,False
+Florida A&M University,228,Southwestern Athletic Conf.,False
+Florida Atlantic University,229,Conference USA,True
+Florida Gulf Coast University,28755,ASUN Conference,False
+Florida International University,231,Conference USA,True
+Florida State University,234,Atlantic Coast Conference,True
+Fordham University,236,Atlantic 10 Conference,False
+Furman University,244,Southern Conference,False
+Gardner-Webb University,1092,Big South Conference,False
+George Mason University,248,Atlantic 10 Conference,False
+George Washington University,249,Atlantic 10 Conference,False
+Georgetown University,251,Big East Conference,False
+Georgia Institute of Technology,255,Atlantic Coast Conference,True
+Georgia Southern University,253,Sun Belt Conference,True
+Georgia State University,254,Sun Belt Conference,True
+Gonzaga University,260,West Coast Conference,False
+Grambling State University,261,Southwestern Athletic Conf.,False
+Grand Canyon University,1104,Western Athletic Conference,False
+Hampton University,270,Colonial Athletic Association,False
+Harvard University,275,The Ivy League,False
+High Point University,19651,Big South Conference,False
+Hofstra University,283,Colonial Athletic Association,False
+Houston Christian University,287,Southland Conference,False
+Howard University,290,Mid-Eastern Athletic Conf.,False
+Idaho State University,294,Big Sky Conference,False
+Illinois State University,299,Missouri Valley Conference,False
+Indiana State University,305,Missouri Valley Conference,False
+"Indiana University, Bloomington",306,Big Ten Conference,True
+Indiana University-Purdue University Indianapolis,2699,Horizon League,False
+Iona University,310,Metro Atlantic Athletic Conference,False
+Iowa State University,311,Big 12 Conference,True
+Jackson State University,314,Southwestern Athletic Conf.,False
+Jacksonville State University,315,ASUN Conference,False
+Jacksonville University,316,ASUN Conference,False
+James Madison University,317,Sun Belt Conference,False
+Kansas State University,327,Big 12 Conference,True
+Kennesaw State University,1157,ASUN Conference,False
+Kent State University,331,Mid-American Conference,True
+La Salle University,340,Atlantic 10 Conference,False
+Lafayette College,342,Patriot League,False
+Lamar University,346,Southland Conference,False
+Lehigh University,352,Patriot League,False
+Liberty University,355,ASUN Conference,True
+Lindenwood University,30136,Ohio Valley Conference,False
+Lipscomb University,28600,ASUN Conference,False
+Long Beach State University,99,Big West Conference,False
+Long Island University,361,Northeast Conference,False
+Longwood University,363,Big South Conference,False
+Louisiana State University,365,Southeastern Conference,True
+Louisiana Tech University,366,Conference USA,True
+Loyola Marymount University,370,West Coast Conference,False
+Loyola University Chicago,371,Atlantic 10 Conference,False
+Loyola University Maryland,369,Patriot League,False
+Manhattan College,381,Metro Atlantic Athletic Conference,False
+Marist College,386,Metro Atlantic Athletic Conference,False
+Marquette University,387,Big East Conference,False
+Marshall University,388,Sun Belt Conference,True
+McNeese State University,402,Southland Conference,False
+Mercer University,406,Southern Conference,False
+Merrimack College,410,Northeast Conference,False
+Miami University (Ohio),414,Mid-American Conference,True
+Michigan State University,416,Big Ten Conference,True
+Middle Tennessee State University,419,Conference USA,True
+Mississippi State University,430,Southeastern Conference,True
+Mississippi Valley State University,432,Southwestern Athletic Conf.,False
+Missouri State University,669,Missouri Valley Conference,False
+Monmouth University,439,Colonial Athletic Association,False
+Montana State University-Bozeman,440,Big Sky Conference,False
+Morehead State University,444,Ohio Valley Conference,False
+Morgan State University,446,Mid-Eastern Athletic Conf.,False
+Mount St. Mary's University,450,Metro Atlantic Athletic Conference,False
+Murray State University,454,Missouri Valley Conference,False
+New Jersey Institute of Technology,471,America East Conference,False
+New Mexico State University,472,Western Athletic Conference,True
+Niagara University,482,Metro Atlantic Athletic Conference,False
+Nicholls State University,483,Southland Conference,False
+Norfolk State University,485,Mid-Eastern Athletic Conf.,False
+North Carolina A&T State University,488,Colonial Athletic Association,False
+North Carolina Central University,489,Mid-Eastern Athletic Conf.,False
+North Carolina State University,490,Atlantic Coast Conference,True
+North Dakota State University,493,The Summit League,False
+Northeastern University,500,Colonial Athletic Association,False
+Northern Arizona University,501,Big Sky Conference,False
+Northern Illinois University,503,Mid-American Conference,True
+Northern Kentucky University,505,Horizon League,False
+Northwestern State University,508,Southland Conference,False
+Northwestern University,509,Big Ten Conference,True
+Oakland University,514,Horizon League,False
+Ohio University,519,Mid-American Conference,True
+Oklahoma State University,521,Big 12 Conference,True
+Old Dominion University,523,Sun Belt Conference,True
+Oral Roberts University,527,The Summit League,False
+Oregon State University,528,Pac-12 Conference,True
+Pennsylvania State University,539,Big Ten Conference,True
+Pepperdine University,541,West Coast Conference,False
+Portland State University,550,Big Sky Conference,False
+Prairie View A&M University,553,Southwestern Athletic Conf.,False
+Presbyterian College,1320,Big South Conference,False
+Princeton University,554,The Ivy League,False
+Providence College,556,Big East Conference,False
+Purdue University,559,Big Ten Conference,True
+Purdue University Fort Wayne,308,Horizon League,False
+Queens University of Charlotte,11504,ASUN Conference,False
+Quinnipiac University,562,Metro Atlantic Athletic Conference,False
+Radford University,563,Big South Conference,False
+Rice University,574,Conference USA,True
+Rider University,576,Metro Atlantic Athletic Conference,False
+Robert Morris University,579,Horizon League,False
+"Rutgers, The State University of New Jersey, New Brunswick",587,Big Ten Conference,True
+Sacred Heart University,590,Northeast Conference,False
+Saint Francis University (Pennsylvania),600,Northeast Conference,False
+Saint Joseph's University,606,Atlantic 10 Conference,False
+Saint Louis University,609,Atlantic 10 Conference,False
+Saint Mary's College of California,610,West Coast Conference,False
+Saint Peter's University,617,Metro Atlantic Athletic Conference,False
+Sam Houston State University,624,Western Athletic Conference,False
+Samford University,625,Southern Conference,False
+San Diego State University,626,Mountain West Conference,True
+San Jose State University,630,Mountain West Conference,True
+Santa Clara University,631,West Coast Conference,False
+Seattle University,1356,Western Athletic Conference,False
+Seton Hall University,635,Big East Conference,False
+Siena College,639,Metro Atlantic Athletic Conference,False
+South Carolina State University,647,Mid-Eastern Athletic Conf.,False
+South Dakota State University,649,The Summit League,False
+Southeast Missouri State University,654,Ohio Valley Conference,False
+Southeastern Louisiana University,655,Southland Conference,False
+Southern Illinois University at Carbondale,659,Missouri Valley Conference,False
+Southern Illinois University Edwardsville,660,Ohio Valley Conference,False
+Southern Methodist University,663,American Athletic Conference,True
+"Southern University, Baton Rouge",665,Southwestern Athletic Conf.,False
+Southern Utah University,667,Western Athletic Conference,False
+St. Bonaventure University,596,Atlantic 10 Conference,False
+St. Francis College Brooklyn,599,Northeast Conference,False
+St. John's University (New York),603,Big East Conference,False
+Stanford University,674,Pac-12 Conference,True
+Stephen F. Austin State University,676,Western Athletic Conference,False
+Stetson University,678,ASUN Conference,False
+Stonehill College,682,Northeast Conference,False
+Stony Brook University,683,Colonial Athletic Association,False
+Syracuse University,688,Atlantic Coast Conference,True
+Tarleton State University,1395,Western Athletic Conference,False
+Temple University,690,American Athletic Conference,True
+Tennessee State University,691,Ohio Valley Conference,False
+Tennessee Technological University,692,Ohio Valley Conference,False
+"Texas A&M University, College Station",697,Southeastern Conference,True
+Texas A&M University-Commerce,199,Southland Conference,False
+Texas A&M University-Corpus Christi,26172,Southland Conference,False
+Texas Christian University,698,Big 12 Conference,True
+Texas Southern University,699,Southwestern Athletic Conf.,False
+Texas State University,670,Sun Belt Conference,True
+Texas Tech University,700,Big 12 Conference,True
+The Citadel,141,Southern Conference,False
+The Ohio State University,518,Big Ten Conference,True
+The University of North Carolina at Charlotte,458,Conference USA,True
+The University of North Carolina at Greensboro,459,Southern Conference,False
+The University of Southern Mississippi,664,Sun Belt Conference,True
+The University of Texas Rio Grande Valley,536,Western Athletic Conference,False
+The University of Tulsa,719,American Athletic Conference,True
+Towson University,711,Colonial Athletic Association,False
+Troy University,716,Sun Belt Conference,True
+Tulane University,718,American Athletic Conference,True
+U.S. Air Force Academy,721,Mountain West Conference,True
+U.S. Military Academy,725,Patriot League,True
+U.S. Naval Academy,726,Patriot League,True
+University at Albany,14,America East Conference,False
+"University at Buffalo, the State University of New York",86,Mid-American Conference,True
+University of Akron,5,Mid-American Conference,True
+University of Alabama,8,Southeastern Conference,True
+University of Alabama at Birmingham,9,Conference USA,True
+University of Arizona,29,Pac-12 Conference,True
+University of Arkansas at Little Rock,32,Ohio Valley Conference,False
+"University of Arkansas, Fayetteville",31,Southeastern Conference,True
+"University of Arkansas, Pine Bluff",2678,Southwestern Athletic Conf.,False
+"University of California, Berkeley",107,Pac-12 Conference,True
+"University of California, Davis",108,Big West Conference,False
+"University of California, Irvine",109,Big West Conference,False
+"University of California, Los Angeles",110,Pac-12 Conference,True
+"University of California, Riverside",111,Big West Conference,False
+"University of California, San Diego",112,Big West Conference,False
+"University of California, Santa Barbara",104,Big West Conference,False
+University of Central Arkansas,1004,ASUN Conference,False
+University of Central Florida,128,American Athletic Conference,True
+University of Cincinnati,140,American Athletic Conference,True
+"University of Colorado, Boulder",157,Pac-12 Conference,True
+University of Connecticut,164,Big East Conference,True
+University of Dayton,175,Atlantic 10 Conference,False
+University of Delaware,180,Colonial Athletic Association,False
+University of Denver,183,The Summit League,False
+University of Detroit Mercy,184,Horizon League,False
+University of Evansville,219,Missouri Valley Conference,False
+University of Florida,235,Southeastern Conference,True
+University of Georgia,257,Southeastern Conference,True
+University of Hartford,272,America East Conference,False
+"University of Hawaii, Manoa",277,Big West Conference,True
+University of Houston,288,American Athletic Conference,True
+University of Idaho,295,Big Sky Conference,False
+University of Illinois Chicago,302,Missouri Valley Conference,False
+University of Illinois Urbana-Champaign,301,Big Ten Conference,True
+University of Iowa,312,Big Ten Conference,True
+University of Kansas,328,Big 12 Conference,True
+University of Kentucky,334,Southeastern Conference,True
+University of Louisiana at Lafayette,671,Sun Belt Conference,True
+University of Louisiana Monroe,498,Sun Belt Conference,True
+University of Louisville,367,Atlantic Coast Conference,True
+University of Maine,380,America East Conference,False
+University of Maryland Eastern Shore,393,Mid-Eastern Athletic Conf.,False
+"University of Maryland, Baltimore County",391,America East Conference,False
+"University of Maryland, College Park",392,Big Ten Conference,True
+University of Massachusetts Lowell,368,America East Conference,False
+"University of Massachusetts, Amherst",400,Atlantic 10 Conference,True
+University of Memphis,404,American Athletic Conference,True
+University of Miami (Florida),415,Atlantic Coast Conference,True
+University of Michigan,418,Big Ten Conference,True
+"University of Minnesota, Twin Cities",428,Big Ten Conference,True
+University of Mississippi,433,Southeastern Conference,True
+"University of Missouri, Columbia",434,Southeastern Conference,True
+University of Missouri-Kansas City,2707,The Summit League,False
+University of Montana,441,Big Sky Conference,False
+University of Nebraska Omaha,464,The Summit League,False
+"University of Nebraska, Lincoln",463,Big Ten Conference,True
+"University of Nevada, Las Vegas",465,Mountain West Conference,True
+"University of Nevada, Reno",466,Mountain West Conference,True
+University of New Hampshire,469,America East Conference,False
+University of New Mexico,473,Mountain West Conference,True
+University of New Orleans,474,Southland Conference,False
+University of North Alabama,487,ASUN Conference,False
+University of North Carolina Asheville,456,Big South Conference,False
+University of North Carolina Wilmington,460,Colonial Athletic Association,False
+"University of North Carolina, Chapel Hill",457,Atlantic Coast Conference,True
+University of North Dakota,494,The Summit League,False
+University of North Florida,2711,ASUN Conference,False
+University of North Texas,497,Conference USA,True
+University of Northern Colorado,502,Big Sky Conference,False
+University of Northern Iowa,504,Missouri Valley Conference,False
+University of Notre Dame,513,Atlantic Coast Conference,True
+University of Oklahoma,522,Big 12 Conference,True
+University of Oregon,529,Pac-12 Conference,True
+University of Pennsylvania,540,The Ivy League,False
+University of Pittsburgh,545,Atlantic Coast Conference,True
+University of Portland,551,West Coast Conference,False
+University of Rhode Island,572,Atlantic 10 Conference,False
+University of Richmond,575,Atlantic 10 Conference,False
+University of San Diego,627,West Coast Conference,False
+University of San Francisco,629,West Coast Conference,False
+University of South Alabama,646,Sun Belt Conference,True
+University of South Carolina Upstate,10411,Big South Conference,False
+"University of South Carolina, Columbia",648,Southeastern Conference,True
+University of South Dakota,650,The Summit League,False
+University of South Florida,651,American Athletic Conference,True
+University of Southern California,657,Pac-12 Conference,True
+University of Southern Indiana,661,Ohio Valley Conference,False
+University of St. Thomas (Minnesota),620,The Summit League,False
+University of Tennessee at Chattanooga,693,Southern Conference,False
+University of Tennessee at Martin,695,Ohio Valley Conference,False
+"University of Tennessee, Knoxville",694,Southeastern Conference,True
+University of Texas at Arlington,702,Western Athletic Conference,False
+University of Texas at Austin,703,Big 12 Conference,True
+University of Texas at El Paso,704,Conference USA,True
+University of Texas at San Antonio,706,Conference USA,True
+University of the Incarnate Word,2743,Southland Conference,False
+University of the Pacific,534,West Coast Conference,False
+University of Toledo,709,Mid-American Conference,True
+University of Utah,732,Pac-12 Conference,True
+University of Vermont,738,America East Conference,False
+University of Virginia,746,Atlantic Coast Conference,True
+University of Washington,756,Pac-12 Conference,True
+University of Wisconsin-Green Bay,794,Horizon League,False
+University of Wisconsin-Madison,796,Big Ten Conference,True
+University of Wisconsin-Milwaukee,797,Horizon League,False
+University of Wyoming,811,Mountain West Conference,True
+Utah State University,731,Mountain West Conference,True
+Utah Tech University,30095,Western Athletic Conference,False
+Utah Valley University,30024,Western Athletic Conference,False
+Valparaiso University,735,Missouri Valley Conference,False
+Vanderbilt University,736,Southeastern Conference,True
+Villanova University,739,Big East Conference,False
+Virginia Commonwealth University,740,Atlantic 10 Conference,False
+Virginia Military Institute,741,Southern Conference,False
+Virginia Polytechnic Institute and State University,742,Atlantic Coast Conference,True
+Wagner College,748,Northeast Conference,False
+Wake Forest University,749,Atlantic Coast Conference,True
+Washington State University,754,Pac-12 Conference,True
+Weber State University,758,Big Sky Conference,False
+West Virginia University,768,Big 12 Conference,True
+Western Carolina University,769,Southern Conference,False
+Western Illinois University,771,The Summit League,False
+Western Kentucky University,772,Conference USA,True
+Western Michigan University,774,Mid-American Conference,True
+Wichita State University,782,American Athletic Conference,False
+William & Mary,786,Colonial Athletic Association,False
+Winthrop University,792,Big South Conference,False
+Wofford College,2915,Southern Conference,False
+Wright State University,810,Horizon League,False
+Xavier University,812,Big East Conference,False
+Yale University,813,The Ivy League,False
+Youngstown State University,817,Horizon League,False
