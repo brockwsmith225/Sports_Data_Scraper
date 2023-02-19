@@ -84,8 +84,8 @@ def parse_team_page(page: str) -> List[Dict]:
                 points = int(stats[2].split("-")[0])
                 opp_points = int(stats[2].split("-")[1].split(" ")[0])
                 overtimes = stats[2].split(" ")[1][1:-1] if len(stats[2].split(" ")) > 1 else "0"
-                if team is None or team == "":
-                    print("Failed to get team name for one team")
+                if team == None or team == "":
+                    print("Failed to get team name for one team", file=sys.stderr)
                 games.append({
                     "date": stats[0],
                     "team": team,
@@ -160,7 +160,7 @@ def fetch(year: str = None, num_threads: int = 8, debug: bool=False):
 
 
     with cv:
-        cv.wait_for(lambda: thread_info['count'] >= thread_info['num_teams'])
+        cv.wait_for(lambda: thread_info['count'] >= thread_info['num_teams'], timeout=60*30 / num_threads)
     pool.close()
     pool.join()
     if debug:
