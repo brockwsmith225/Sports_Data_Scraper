@@ -22,7 +22,7 @@ jobs:
       - name: Fetch CBB data
         run: |
           pip install -r requirements.txt
-          python -m scraper cbb fetch --debug > games.csv
+          python -m scraper cbb fetch --debug --num-threads 1 > games.csv
 
       - name: Commit changes
         uses: EndBug/add-and-commit@v9
