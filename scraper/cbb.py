@@ -143,30 +143,34 @@ def parse_team_callback(thread_info: dict, team_page: str):
     thread_info['pool'].apply_async(parse_team_page, [team_page], callback=lambda team_games: add_games(thread_info, team_games))
 
 @app.command()
-def fetch(year: str = None, num_threads: int = 8, debug: bool=False):
+def fetch(year: str = None, num_threads: int = 8, debug: bool = False, multithreaded: bool = False):
     if not year:
         year = str(datetime.date.today().year)
     thread_info = generate_thread_info(num_threads)
 
     pool = thread_info['pool']
     cv = thread_info['cv']
+    games = []
 
     starttime = time.time()
     for team, team_url in get_team_urls(year):
         if debug:
             print(f"Fetching {team} from {team_url}", file=sys.stderr)
-        pool.apply_async(get_team_page, [team_url], callback=lambda team_page : parse_team_callback(thread_info, team_page))
+        if multithreaded:
+            pool.apply_async(get_team_page, [team_url], callback=lambda team_page : parse_team_callback(thread_info, team_page))
+        else:
+            games.extend(parse_team_page(get_team_page(team_url)))
 
-
-
-    with cv:
-        cv.wait_for(lambda: thread_info['count'] >= thread_info['num_teams'], timeout=60*30 / num_threads)
-    pool.close()
-    pool.join()
+    if multithreaded:
+        with cv:
+            cv.wait_for(lambda: thread_info['count'] >= thread_info['num_teams'], timeout=60*30 / num_threads)
+        pool.close()
+        pool.join()
+        games = thread_info['games']
     if debug:
         print(f"Total elapsed time: {time.time() - starttime}", file=sys.stderr)
 
-    output_csv(thread_info['games'])
+    output_csv(games)
 
 if __name__ == "__main__":
     app()
