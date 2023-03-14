@@ -48,7 +48,7 @@ def format_stat(stat: str) -> str:
 
 def parse_team_page(page: str) -> List[Dict]:
     page = BeautifulSoup(page, "html.parser")
-    team = page.find("div", id="contentarea").table.tr.td.table.find_all("tr")[2].find_all("td")[1].a.get_text().strip()
+    team = page.find("div", id="contentarea").table.tr.td.table.find_all("tr")[2].find_all("td")[1].find_all("a")[-1].get_text().strip()
     games = []
     for game in page.find("div", id="contentarea").find("div", id="game_breakdown_div").table.tr.td.table.find_all("tr"):
         stats = [format_stat(x.get_text()) for x in game.find_all("td")]
@@ -57,8 +57,8 @@ def parse_team_page(page: str) -> List[Dict]:
                 games[-1].update({
                     "opp_field_goals_made": stats[5],
                     "opp_field_goals_attempted": stats[6],
-                    "opp_3_point_field_goals_made": stats[7],
-                    "opp_3_point_field_goals_attempted": stats[8],
+                    "opp_three_point_field_goals_made": stats[7],
+                    "opp_three_point_field_goals_attempted": stats[8],
                     "opp_free_throws_made": stats[9],
                     "opp_free_throws_attempted": stats[10],
                     "opp_offensive_rebounds": stats[12],
@@ -97,8 +97,8 @@ def parse_team_page(page: str) -> List[Dict]:
                     "opp_points": str(opp_points),
                     "field_goals_made": stats[5],
                     "field_goals_attempted": stats[6],
-                    "3_point_field_goals_made": stats[7],
-                    "3_point_field_goals_attempted": stats[8],
+                    "three_point_field_goals_made": stats[7],
+                    "three_point_field_goals_attempted": stats[8],
                     "free_throws_made": stats[9],
                     "free_throws_attempted": stats[10],
                     "offensive_rebounds": stats[12],
