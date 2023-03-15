@@ -17,6 +17,7 @@ app = typer.Typer()
 def get_team_urls(year: str) -> List[str]:
     years_to_id = {
         "2023": "16060",
+        "2023w": "16061"
     }
     team_urls = []
     teams = []
@@ -48,6 +49,8 @@ def format_stat(stat: str) -> str:
 
 def parse_team_page(page: str) -> List[Dict]:
     page = BeautifulSoup(page, "html.parser")
+    if page.find("div", id="contentarea") is None:
+        return []
     team = page.find("div", id="contentarea").table.tr.td.table.find_all("tr")[2].find_all("td")[1].find_all("a")[-1].get_text().strip()
     games = []
     for game in page.find("div", id="contentarea").find("div", id="game_breakdown_div").table.tr.td.table.find_all("tr"):
