@@ -17,7 +17,8 @@ app = typer.Typer()
 def get_team_urls(year: str) -> List[str]:
     years_to_id = {
         "2023": "16060",
-        "2023w": "16061"
+        "2023w": "16061",
+        "2024": "16501"
     }
     team_urls = []
     teams = []
