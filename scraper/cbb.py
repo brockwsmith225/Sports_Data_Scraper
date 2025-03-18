@@ -18,7 +18,8 @@ def get_team_urls(year: str) -> List[str]:
     years_to_id = {
         "2023": "16060",
         "2023w": "16061",
-        "2024": "16501"
+        "2024": "16501",
+        "2025": "16700"
     }
     team_urls = []
     teams = []
@@ -50,11 +51,15 @@ def format_stat(stat: str) -> str:
 
 def parse_team_page(page: str) -> List[Dict]:
     page = BeautifulSoup(page, "html.parser")
-    if page.find("div", id="contentarea") is None:
+    cards = page.find_all("div", attrs={"class": "card"})
+    search_cards = [card for card in cards if len(card["class"]) == 1]
+    if len(search_cards) == 0:
+        print("Didn't find Card")
         return []
-    team = page.find("div", id="contentarea").table.tr.td.table.find_all("tr")[2].find_all("td")[1].find_all("a")[-1].get_text().strip()
+    card_div = search_cards[0]
+    team = card_div.table.tr.td.table.find_all("tr")[2].find_all("td")[1].find_all("a")[-1].get_text().strip()
     games = []
-    for game in page.find("div", id="contentarea").find("div", id="game_breakdown_div").table.tr.td.table.find_all("tr"):
+    for game in card_div.find("div", id="game_breakdown_div").table.tr.td.table.find_all("tr"):
         stats = [format_stat(x.get_text()) for x in game.find_all("td")]
         if len(stats) > 3 and stats[2] != "-":
             if stats[1] == "Defensive Totals":
@@ -167,7 +172,9 @@ def fetch(year: str = None, num_threads: int = 8, debug: bool = False, multithre
 
     if multithreaded:
         with cv:
-            cv.wait_for(lambda: thread_info['count'] >= thread_info['num_teams'], timeout=60*30 / num_threads)
+            cv.wait_for(lambda: thread_info['count'] >= thread_info['num_teams'], timeout=None)
+        if debug:
+            print(f"Closing pool after parsing {thread_info['count']} games.")
         pool.close()
         pool.join()
         games = thread_info['games']
